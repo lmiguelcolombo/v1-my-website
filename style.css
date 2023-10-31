@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+#header {
+  max-height: 100vh;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5rem);
+}
+
+em.experience-measure {
+  font-style: italic;
+}
+
+.view-full-resume {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#projects h5.card-title a {
+  text-decoration: none;
+  color: #000;
+
+  transition: font-size 0.5s;
+}
+
+#projects h5.card-title a:hover {
+  text-decoration: underline;
+  font-size: larger;
+}

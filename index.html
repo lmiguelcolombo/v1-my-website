@@ -16,108 +16,187 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="getGithubRepos()">
-    <div class="container mt-5">
-      <div class="row">
-        <div id="header" class="col-6 position-sticky top-0">
-          <h1>Luis Miguel Colombo</h1>
-          <h3><em>Full Stack Web Developer</em></h3>
-          <p>I build beatufil, responsive, and UX-based applications.</p>
-          <ul id="nav-list" class="nav nav-pills w-25 flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experiences">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-          </ul>
+    <div id="welcome" class="container-fluid d-flex flex-column">
+      <div id="header" class="container d-flex justify-content-center">
+        <ul id="nav-list" class="nav nav-pills gap-5">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiences">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+      <section id="hello" class="container">
+        <h1 class="">
+          Hi 👋🏼, I'm Luis Miguel Colombo | <em>Full Stack Web Developer</em>
+        </h1>
+        <div class="social mt-3">
+          <a href="https://linkedin.com/in/luis-miguel-colombo" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/lmiguelcolombo" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://instagram.com/colomboluismiguel" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:lmiguelcolombo@gmail.com" target="_blank">
+            <i class="bi bi-envelope"></i>
+          </a>
         </div>
-        <main
-          class="col-6 d-flex flex-column gap-5"
-          data-bs-spy="scroll"
-          data-bs-target="#nav-list"
-          data-bs-smooth-scroll="true"
-        >
-          <div id="about" data-bs-target="#about">
-            <p>
-              I grew up around computers, so I'm very fast and excited about
-              coding, and finding bugs and solutions. I have some experience
-              with <strong>BI development and analysis</strong>, which can help
-              when talking with clients and inside the company about strategies
-              to grow and statistics. <br /><br />
-              I have great experience working with
-              <strong>HTML, CSS, JS (ReactJS)</strong>, and
-              <strong>MySQL</strong>; always use Git and GitHub for versioning;
-              I use <strong>Figma</strong> for prototyping and designing
-              client's [final] product. It's good to notice that I have a
-              notable facility to learn and apply new JavaScript frameworks. I
-              have worked with agile methodologies, especially
-              <strong>SCRUM and KanBan</strong>
-              since I started this journey. <br /><br />
-              Nowadays, I work a lot with <strong>PHP, Laravel</strong> - using
-              MVC architecture, Blade templates, Eloquent -,
-              <strong>Docker</strong>, and MySQL. I started recently to learn
-              <em>Terraform</em> and <em>AWS Cloud Computing Service</em>.
+        <p class="w-50 fs-5 mt-3">
+          I love problems, but I prefer solutions! 💻 I'm lifelong and fast
+          learner 📚 I also might have a thing with music 🎸, literature 📖, and
+          languages 🌎
+        </p>
+      </section>
+    </div>
+    <div id="info" class="container d-flex flex-column">
+      <section id="skills" class="d-flex gap-5 align-items-end">
+        <div class="d-flex flex-column">
+          <h2 class="fw-bold fs-1">My Skills</h2>
+          <img src="images/eu.JPG" alt="" width="140" height="200" />
+        </div>
+        <div class="d-flex flex-column gap-5">
+          <div class="skills w-75">
+            <ul class="p-0 fw-bold d-flex flex-wrap">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>ReactJS</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>Git & GitHub</li>
+              <li>Web Design (UI/UX)</li>
+              <li>Figma</li>
+              <li>SCRUM</li>
+              <li>DaVinci Resolve</li>
+              <li>Lightworks</li>
+              <li>GIMP</li>
+            </ul>
+          </div>
+          <div class="description">
+            <h4 class="fw-bold">
+              I love building beatufil, responsive, and UX-based applications 🖥️
+            </h4>
+            <p class="w-75 fs-5">
+              I started playing with computers when I was 11 years-old. Since
+              then I have been tinkering with all sorts of technologies that in
+              some way or another led me to work on music, photography, sound
+              engineering, electric engineering, automation, video production,
+              feature film post-production, VR games, and 3D sound.
             </p>
           </div>
-          <div id="experiences" data-bs-target="#experiences">
-            <h3>Experience</h3>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Junior Full Stack Developer - Academia da Web
-                </h5>
-                <em class="experience-measure">OCT 2022 - PRESENT</em>
-                <p class="card-text">
-                  I am building an application to show data collected from BI,
-                  exposing it through a responsive web interface.
-                </p>
-              </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="container py-5">
+        <h2 class="mb-5 fw-bold fs-1">Experiences</h2>
+        <div class="d-flex flex-column gap-5 ms-5">
+          <div class="experience">
+            <h4 class="title">
+              <strong>Junior Full Stack Web Developer</strong> - Academia da
+              Web, Brazil (Remote)
+            </h4>
+            <em>OCT 2022 - PRESENT</em>
+            <p class="description">
+              I am building an application to show data collected from BI,
+              exposing it through a responsive web interface with charts,
+              percentages, and management of users and companies.
+            </p>
+            <div class="experience-skills">
+              <ul class="p-0 d-flex flex-wrap">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+                <li>Web Design (UI/UX)</li>
+                <li>Figma</li>
+                <li>SCRUM</li>
+              </ul>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Intern BI Developer - Academia da Web
-                </h5>
-                <em class="experience-measure">JAN 2022 - JUN 2022</em>
-                <p class="card-text">
-                  Drew Power BI dashboards, implemented BI features for clients,
-                  and helped clients get up to speed.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Intern Front-End Web Developer - Academia da Web
-                </h5>
-                <em class="experience-measure">JAN 2020 - JAN 2022</em>
-                <p class="card-text">
-                  I built a ReactJS Single-Page Application with HTML, CSS, and
-                  JavaScript, using TypeScript.
-                </p>
-              </div>
-            </div>
-            <a href="resume.pdf" target="_blank" class="view-full-resume"
-              >View Full Resumé</a
-            >
           </div>
-          <div id="projects" data-bs-target="#projects">
-            <h3>Projects</h3>
+          <div class="experience">
+            <h4 class="title">
+              <strong>Intern BI Developer</strong> - Academia da Web, Brazil
+              (Remote)
+            </h4>
+            <em>JAN 2022 - JUN 2022</em>
+            <p class="description">
+              Drew Power BI dashboards, implemented BI features for costumers,
+              and helped them get up to speed, understanding exactly their
+              necessities and problems.
+            </p>
+            <div class="experience-skills">
+              <ul class="p-0 d-flex flex-wrap">
+                <li>Power BI</li>
+                <li>QlikView</li>
+                <li>SQL</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft PowerPoint</li>
+                <li>UX Design</li>
+              </ul>
+            </div>
           </div>
-        </main>
-      </div>
+          <div class="experience">
+            <h4 class="title">
+              <strong>Intern Front-End Web Developer</strong> - Academia da Web,
+              Brazil (Remote)
+            </h4>
+            <p class="description">
+              I built HTML, CSS, and JavaScript basic and simple pages and
+              applications, started to learn more about Web Development,
+              Programming, Internet, etc. I also worked with ReactJS, building
+              Single-Page Applications using TypeScript.
+            </p>
+            <div class="experience-skills">
+              <ul class="p-0 d-flex flex-wrap">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Typescript</li>
+                <li>ReactJS</li>
+                <li>jQuery</li>
+                <li>Git & GitHub</li>
+                <li>SCRUM</li>
+              </ul>
+            </div>
+          </div>
+          <a
+            href="assets/resume.pdf"
+            target="_blank"
+            rel=""
+            class="view-full-resume fs-5 d-flex gap-2 align-items-center"
+            >View full resumè <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+      <section id="projects" class="container pb-5">
+        <h2 class="section-title fw-bold fs-1">Projects</h2>
+      </section>
     </div>
 
-    <script src="index.js"></script>
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

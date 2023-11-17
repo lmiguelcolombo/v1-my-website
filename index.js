@@ -10,9 +10,11 @@ async function getGithubRepos() {
     reposName = repo.name;
     url = repo.html_url;
     description = repo.description;
-    divProjects.insertAdjacentHTML(
-      "beforeend",
-      `<div class="card">
+    if (reposName != "AdmFin") {
+      divProjects.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
+        <img src="images/${reposName}.png" class="card-img-top" alt="${reposName}">
         <div class="card-body">
           <h5 class="card-title"><a href="${url}" target="_blank">${reposName}</a></h5>
           <p class="card-text">
@@ -20,6 +22,7 @@ async function getGithubRepos() {
           </p>
         </div>
       </div>`
-    );
+      );
+    }
   });
 }

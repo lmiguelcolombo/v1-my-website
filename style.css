@@ -9,50 +9,121 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-#header {
-  max-height: 100vh;
+a.nav-link {
+  color: #efefef;
+  text-decoration: none;
+}
+
+#welcome {
+  height: 100vh;
+
+  gap: 20rem;
+
+  background-color: #131e40;
+  color: #efefef;
 }
 
 h1 {
-  font-weight: 800;
+  font-size: 3.5rem;
 }
 
-h2 {
-  font-weight: 700;
+.social {
+  display: flex;
+  gap: 1rem;
+}
+i.bi-github,
+i.bi-linkedin,
+i.bi-instagram,
+i.bi-envelope {
+  font-size: 2rem;
+  color: #fc5130;
+
+  transition: color 0.5s;
 }
 
-h3 {
-  font-weight: 600;
+i.bi:hover {
+  color: #efefef;
 }
 
-#about p {
-  font-size: 1.2rem;
+#info {
+  height: 100vh;
+  margin-top: 5rem;
+
+  gap: 10rem;
 }
 
-.card {
-  margin-bottom: 2rem;
-
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(5rem);
+#info section img {
+  margin-top: 1rem;
+  border-radius: 10%;
+  zoom: 200%;
 }
 
-em.experience-measure {
-  font-style: italic;
+.skills ul,
+.experience-skills ul {
+  list-style: none;
+}
+
+.skills ul li,
+.experience-skills ul li {
+  background-color: #131e40;
+  color: #efefef;
+  text-align: center;
+  border-radius: 0.5rem;
+
+  width: fit-content;
+  padding: 0.5rem 0.85rem;
+  margin: 0.5rem;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.skills ul li:hover,
+.experience-skills ul li:hover {
+  background-color: #fc5130;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .description {
+  width: 70%;
 }
 
 .view-full-resume {
+  color: #fc5130;
   text-decoration: none;
-  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.view-full-resume:hover {
+  color: #dc3e1e;
+  text-decoration: none;
+  gap: 1rem !important;
 }
 
-#projects h5.card-title a {
-  text-decoration: none;
-  color: #000;
-
-  transition: font-size 0.5s;
+#projects {
+  display: grid;
+  gap: 5rem;
 }
 
-#projects h5.card-title a:hover {
-  text-decoration: underline;
-  font-size: larger;
+#projects .card-title a {
+  color: #131e40;
+}
+
+#projects p.card-text {
+  color: #131e40bd;
+}
+
+.card {
+  width: fit-content;
+  margin-left: 4rem;
+}
+
+.card-img-top {
+  margin-top: 0rem !important;
+  border-radius: 5px !important;
+  width: 20rem;
 }
